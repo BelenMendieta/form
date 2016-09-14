@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORMULARIO</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b" data-theme = "b">
+<h1>FORMULARIO| JQUERY MOBILE</h1>
+</div>
+<div data-role="main" class="ui-content">
+<h2><center>
+  TODO SOBRE MI
+</center></h2>
+
+<div data-role="fieldcontain" >
+<label for="name">Nombre  :</label>
+<input type="text" name="name" id="name" value="" placeholder="Nombre(s)"/>
+</div>
+
+<div data-role="fieldcontain">
+<label for="ape_p">Apellidos :</label>
+<input type="text" name="apellido" id="apellido" value="" placeholder="Apellido Paterno y Materno" />
+</div>
+
+
+<div data-role="fieldcontain">
+<label for="email">Email:</label>
+<input type="email" name="email " id="email " value="@" />
+</div>
+
+
+<br>
+
+<div align= "center">
+<fieldset data-role="controlgroup" data-iconpos="right">
+        <legend>Sexo:</legend>
+        <input type="radio" name="fem" id="fem" value="fem" checked="checked">
+        <label for="fem">Femenino</label>
+        <input type="radio" name="mas" id="mas" value="mas">
+        <label for="mas">Masculino</label>
+        
+    </fieldset>
+
+</div>
+
+<br>
+
+<div data-role="fieldcontain" align= "center">
+<label>Fecha de Nacimiento :</label>
+<fieldset data-role="controlgroup" data-type="vertical" >
+
+<label for="select_mes">Mes</label>
+<select name="select_mes" id="select_mes">
+<option>Mes</option>
+<option value="ene">Enero </option>
+<option value="feb">Febrero </option>
+<option value="mar">Marzo </option>
+<option value="abr">Abrir </option>
+<option value="may">Mayo</option>
+<option value="jun">Junio </option>
+<option value="jal">Julio </option>
+<option value="ago">Agosto </option>
+<option value="sep">Septiembre </option>
+<option value="oct">Octubre </option>
+<option value="nov">Noviembre </option>
+<option value="dic">Diciembre </option>
+<!-- etc. -->
+</select>
+<label for="select_dia">Dia</label>
+<select name="select_dia" id="select_dia">
+<option>Dia</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<!-- etc. -->
+</select>
+<label for="select_anio">Año</label>
+<select name="select_anio" id="select_anio">
+<option>Año</option>
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+
+</select>
+</fieldset>
+</div>
+
+<br>
+
+<div data-role="fieldcontain">
+<label>Color preferido:</label>
+<fieldset data-role="controlgroup" data-type="vertical" >
+
+<label for="select_color">Color</label>
+<select name="select_color" id="select_color">
+<option>Color</option>
+<option value="azul">Azul </option>
+<option value="amarillo">Amarillo </option>
+<option value="blanco">Blanco </option>
+<option value="dorado">Dorado </option>
+<option value="gris">Gris </option>
+<option value="morado">Morado </option>
+<option value="naranja">Naranja</option>
+<option value="negro">Negro </option>
+<option value="rojo">Rojo</option>
+<option value="rosa">Rosa</option>
+<option value="verde">Verde</option>
+
+</select>
+</fieldset>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label>Nivel escolar:</label>
+<fieldset data-role="controlgroup" data-type="vertical" >
+
+<label for="select_grado">Nivel de estudios</label>
+<select name="select_grado" id="select_grado">
+<option>Grado Escolar</option>
+<option value="primaria">Primaria </option>
+<option value="secundaria">Secundaria </option>
+<option value="bachillerato">Bachillerato </option>
+<option value="univeridad">Universidad </option>
+<option value="posgrado">Posgrado/Doctorado </option>
+
+
+</select>
+</fieldset>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="hobbies">Hobbies:</label>
+<textarea name="hobbies" id="hobbies" placeholder="Fotografía, buceo, natación, lectura, etc."></textarea>
+</div>
+
+<br>
+
+<div data-role="fieldcontain">
+<label for="numero">Numero preferido:</label>
+<input type="text" name="nump" id="nump" value="" placeholder="Introduce tu número favorito"/>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="numhermanos">¿Cuantos hermanos tienes?:</label>
+<input type="text" name="numher" id="numher" value="" placeholder="Nùmero de hermanos"/>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="numero">¿Què nùmero eres de hijo?</label>
+<input type="text" name="name" id="name" value="" placeholder="Primero, segundo, tercero, etc."/>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="deporte">Deporte(s) Preferido(s)</label>
+<input type="text" name="deporte" id="deporte" placeholder="Futbol. Beisbol, Basquetbol, Ninguno, etc."></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="pelicula">Peliculas Favoritas:</label>
+<textarea name="pelicula" id="pelicula" placeholder="Pelicula Favorita"></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+        <legend>Género Literario o Cinematografico preferido:</legend>
+        <input type="checkbox" name="accion" id="accion">
+        <label for="accion">Accion</label>
+         <input type="checkbox" name="comedia" id="comedia">
+        <label for="comedia">Comedia</label>
+         <input type="checkbox" name="ciencia" id="ciencia">
+        <label for="ciencia">Ciencia-Ficción</label>
+        <input type="checkbox" name="romance" id="romance">
+        <label for="romance">Romance</label>
+        <input type="checkbox" name="terror" id="terror">
+        <label for="terror">Terror</label>
+    </fieldset>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="comida">Comida Preferida:</label>
+<textarea name="comida" id="comida" placeholder="Pizza, Enchiladas,Chalupas, etc."></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="mpreferida">En la escuela,¿Què asignaturas son tus favoritas?</label>
+<textarea name="mpreferida" id="mpreferida" placeholder="Español, Matemàticas, Quìmica, Inglès, etc."></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="mdislike">¿Què asignaturas no lo son?</label>
+<textarea name="mdislike" id="mdislike" placeholder="Español, Matemàticas, Quìmica, Inglès, etc."></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="amigos">Mejores Amigos(as):</label>
+<textarea name="amigos" id="amigos" placeholder="Mejores amigos(as)"></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="frase">Frase favorita:</label>
+<textarea name="frase" id="frase" placeholder="Frase favorita"></textarea>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="palabra">Definete en una palabra:</label>
+<INPUT TYPE="TEXT" name="palabra" id="palabra" placeholder="Palabra que te define">
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label>Genero de mùsica preferido:</label>
+<fieldset data-role="controlgroup" data-type="vertical" >
+
+<label for="select_musica">Musica</label>
+<select name="select_musica" id="select_musica">
+<option>Genero de Musica</option>
+<option value="rock">Rock </option>
+<option value="pop">Pop </option>
+<option value="banda">Banda </option>
+<option value="rap">Rap </option>
+<option value="reggaeton">Reggaeton </option>
+<option value="electronica">Electronica </option>
+
+
+</select>
+</fieldset>
+</div>
+<br>
+
+<div data-role="fieldcontain">
+<label for="canción">Canción Favorita:</label>
+<INPUT TYPE="text" name="cancion" id="cancion" placeholder="Canción-Cantante">
+</div>
+<br>
+
+
+
+<div>
+<label for="slider-fill">En la escala del 1 al 100, ¿Qué tal te pareció este formulario?:</label>
+<input type="range" name="slider-fill" id="slider-fill" value="60" min="0" max="100"
+data-highlight="true" />
+</div>
+
+<br>
+
+<div>
+<center>
+<h2>Gracias por llenar este formulario, ya puedes enviarlo.</h2> </center>
+</div>
+
+<div data-role="fieldcontain">
+  <center> <input type="submit" value="Enviar Formulario" class="submit"/> <br><br>
+  <input type="Reset" value="Borrar Todo">
+  </center>
+  </div>
+
+</div>
+
+<div data-role="footer" align="center" data-theme="b" data-position = "fixed">
+  <div>
+  <h4>MENDIETA CALVARIO BELEN</h4>
+  <h5>ICAS</h5></div></div>
+</body>
+ </html>
